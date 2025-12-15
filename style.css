@@ -1,0 +1,109 @@
+body {
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Images/CatBg.jpg') no-repeat center center/cover;
+}
+
+header {
+    background-color:  rgba(245, 165, 205, 0.635);
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Cute Bubble', sans-serif;
+    color: #840058;
+}
+
+nav {
+    text-align: center;
+    background-color:  #1f1f1f;
+    padding: 10px;
+    width: 100%;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff30c1;
+}
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(45deg, rgba(255, 125, 179, 0.557), rgba(254, 166, 244, 0.616));
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    padding: 20px;
+    background: linear-gradient(45deg, rgba(255, 125, 179, 0.557), rgba(254, 166, 244, 0.616));
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0; /* allow grid to place cards */
+}
+
+.menu li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+}
+
+.menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* column1 = Main, column2 = Desserts, column3 = Beverages */
+    gap: 1.5rem;
+    align-items: start;
+    padding: 20px;
+    background: linear-gradient(45deg, rgba(255,125,179,0.15), rgba(254,166,244,0.10));
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu h2 {
+    color: #840058;
+    text-align: justify;
+    border-bottom: #ff30c1 2px solid;
+}
+
+footer {
+    background-color:  #1f1f1f;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #ffffff;
+}
+
+@media (max-width: 880px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+}
